@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Cherry Studio",
+    "name": "NextGen AI",
     "slug": "cherry-studio",
     "version": "0.3.0",
     "runtimeVersion": {
@@ -20,7 +20,7 @@
       "supportsTablet": true,
       "requireFullScreen": false,
       "icon": "./assets/icon.png",
-      "bundleIdentifier": "com.cherryai.cherrystudio-app",
+      "bundleIdentifier": "com.nextgenaidevelopers.nextgenai",
       "appleTeamId": "87242QY66T",
       "privacyManifests": {
         "NSPrivacyTracking": false,
@@ -53,33 +53,45 @@
             "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeProductInteraction",
             "NSPrivacyCollectedDataTypeLinked": false,
             "NSPrivacyCollectedDataTypeTracking": false,
-            "NSPrivacyCollectedDataTypePurposes": ["NSPrivacyCollectedDataTypePurposeAnalytics"]
+            "NSPrivacyCollectedDataTypePurposes": [
+              "NSPrivacyCollectedDataTypePurposeAnalytics"
+            ]
           },
           {
             "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeDeviceID",
             "NSPrivacyCollectedDataTypeLinked": false,
             "NSPrivacyCollectedDataTypeTracking": false,
-            "NSPrivacyCollectedDataTypePurposes": ["NSPrivacyCollectedDataTypePurposeAnalytics"]
+            "NSPrivacyCollectedDataTypePurposes": [
+              "NSPrivacyCollectedDataTypePurposeAnalytics"
+            ]
           }
         ],
         "NSPrivacyAccessedAPITypes": [
           {
             "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
-            "NSPrivacyAccessedAPITypeReasons": ["CA92.1"]
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
           },
           {
             "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategorySystemBootTime",
-            "NSPrivacyAccessedAPITypeReasons": ["35F9.1"]
+            "NSPrivacyAccessedAPITypeReasons": [
+              "35F9.1"
+            ]
           },
           {
             "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryFileTimestamp",
-            "NSPrivacyAccessedAPITypeReasons": ["C617.1"]
+            "NSPrivacyAccessedAPITypeReasons": [
+              "C617.1"
+            ]
           }
         ]
       },
       "entitlements": {
         "com.apple.developer.healthkit": true,
-        "com.apple.security.application-groups": ["group.com.cherryai.cherrystudio-app"]
+        "com.apple.security.application-groups": [
+          "group.com.cherryai.cherrystudio-app"
+        ]
       },
       "infoPlist": {
         "UISupportedInterfaceOrientations~ipad": [
@@ -88,11 +100,13 @@
           "UIInterfaceOrientationLandscapeLeft",
           "UIInterfaceOrientationLandscapeRight"
         ],
-        "NSCalendarsWriteOnlyAccessUsageDescription": "Allow Cherry Studio to add calendar events when you ask the assistant.",
-        "NSHealthShareUsageDescription": "Allow Cherry Studio to read selected health and fitness data when you ask the assistant and, with your approval, share it with your selected AI service for analysis.",
-        "NSHealthUpdateUsageDescription": "Cherry Studio reads selected Apple Health data to answer your health and fitness questions. It does not save or modify data in Apple Health.",
-        "NSLocalNetworkUsageDescription": "Allow Cherry Studio to connect to the Cherry Studio desktop app, AI providers, and MCP servers on your local network.",
-        "NSBonjourServices": ["_cherry-remote._tcp"],
+        "NSCalendarsWriteOnlyAccessUsageDescription": "Allow NextGen AI to add calendar events when you ask the assistant.",
+        "NSHealthShareUsageDescription": "Allow NextGen AI to read selected health and fitness data when you ask the assistant and, with your approval, share it with your selected AI service for analysis.",
+        "NSHealthUpdateUsageDescription": "NextGen AI reads selected Apple Health data to answer your health and fitness questions. It does not save or modify data in Apple Health.",
+        "NSLocalNetworkUsageDescription": "Allow NextGen AI to connect to the NextGen AI desktop app, AI providers, and MCP servers on your local network.",
+        "NSBonjourServices": [
+          "_cherry-remote._tcp"
+        ],
         "NSAppTransportSecurity": {
           "NSAllowsArbitraryLoads": true
         },
@@ -102,9 +116,9 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#F65D5D"
+        "backgroundColor": "#060D24"
       },
-      "package": "com.cherryai.cherrystudio_app",
+      "package": "com.nextgenaidevelopers.nextgenai",
       "predictiveBackGestureEnabled": false,
       "blockedPermissions": [
         "android.permission.RECORD_AUDIO",
@@ -178,7 +192,7 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow Cherry Studio to scan desktop pairing QR codes and take photos for chat messages and drawings.",
+          "cameraPermission": "Allow NextGen AI to scan desktop pairing QR codes and take photos for chat messages and drawings.",
           "microphonePermission": false,
           "recordAudioAndroid": false,
           "barcodeScannerEnabled": true
@@ -188,8 +202,8 @@
       [
         "expo-calendar",
         {
-          "calendarPermission": "Allow Cherry Studio to access calendars when you ask the assistant.",
-          "remindersPermission": "Allow Cherry Studio to access reminders when you ask the assistant."
+          "calendarPermission": "Allow NextGen AI to access calendars when you ask the assistant.",
+          "remindersPermission": "Allow NextGen AI to access reminders when you ask the assistant."
         }
       ],
       [
@@ -200,33 +214,37 @@
           "isIosBackgroundLocationEnabled": false,
           "locationAlwaysAndWhenInUsePermission": false,
           "locationAlwaysPermission": false,
-          "motionUsagePermission": "Cherry Studio does not read or track your motion and fitness activity. This permission description is required by the location service included in the app.",
-          "locationWhenInUsePermission": "Allow Cherry Studio to use your location when you ask the assistant."
+          "motionUsagePermission": "NextGen AI does not read or track your motion and fitness activity. This permission description is required by the location service included in the app.",
+          "locationWhenInUsePermission": "Allow NextGen AI to use your location when you ask the assistant."
         }
       ],
       "expo-document-picker",
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/GeistMono-Regular.ttf"]
+          "fonts": [
+            "./assets/fonts/GeistMono-Regular.ttf"
+          ]
         }
       ],
       "expo-image",
       [
         "expo-image-picker",
         {
-          "photosPermission": "Allow Cherry Studio to preview and select photos for drawings and chat messages.",
-          "cameraPermission": "Allow Cherry Studio to scan desktop pairing QR codes and take photos for chat messages and drawings.",
+          "photosPermission": "Allow NextGen AI to preview and select photos for drawings and chat messages.",
+          "cameraPermission": "Allow NextGen AI to scan desktop pairing QR codes and take photos for chat messages and drawings.",
           "microphonePermission": false
         }
       ],
       [
         "expo-media-library",
         {
-          "photosPermission": "Allow Cherry Studio to preview photos for drawings and chat messages.",
-          "savePhotosPermission": "Allow Cherry Studio to save photos.",
+          "photosPermission": "Allow NextGen AI to preview photos for drawings and chat messages.",
+          "savePhotosPermission": "Allow NextGen AI to save photos.",
           "preventAutomaticLimitedAccessAlert": true,
-          "granularPermissions": ["photo"]
+          "granularPermissions": [
+            "photo"
+          ]
         }
       ],
       "expo-web-browser",
@@ -266,7 +284,9 @@
                   "targetName": "ExpoWidgetsTarget",
                   "bundleIdentifier": "com.cherryai.cherrystudio-app.ExpoWidgetsTarget",
                   "entitlements": {
-                    "com.apple.security.application-groups": ["group.com.cherryai.cherrystudio-app"]
+                    "com.apple.security.application-groups": [
+                      "group.com.cherryai.cherrystudio-app"
+                    ]
                   }
                 }
               ]

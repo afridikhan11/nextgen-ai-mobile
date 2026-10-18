@@ -162,7 +162,7 @@ export function StartupCover({
         ]}
       >
         <Text accessible={false} allowFontScaling={false} style={styles.brandText}>
-          Cherry Studio
+          NextGen AI
         </Text>
       </Animated.View>
     </Animated.View>

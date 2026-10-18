@@ -72,7 +72,7 @@ export function SidebarHeader() {
   );
 }
 
-const brand = 'Cherry Studio';
+const brand = 'NextGen AI';
 /** The disclosure chevron (`size-4`) and its `gap-1` leading space. */
 const chevronWidth = 20;
 

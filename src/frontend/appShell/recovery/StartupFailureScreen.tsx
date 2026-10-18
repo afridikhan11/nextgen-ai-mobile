@@ -8,8 +8,8 @@ import { RecoveryScreen } from './RecoveryScreen';
 const FALLBACK_COPY = {
   'common.retry': 'Retry',
   'recovery.startupFailed.description':
-    'Something stopped the app from starting. Try again. If this keeps happening, close Cherry Studio completely and reopen it.',
-  'recovery.startupFailed.title': "Cherry Studio couldn't start",
+    'Something stopped the app from starting. Try again. If this keeps happening, close NextGen AI completely and reopen it.',
+  'recovery.startupFailed.title': "NextGen AI couldn't start",
 } as const;
 
 function translate(key: keyof typeof FALLBACK_COPY) {

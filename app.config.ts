@@ -43,7 +43,8 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     scheme: `cherrystudio${suffix.replace('.', '-')}`,
     updates: {
       ...config.updates,
-      enabled: profile !== 'development' && process.env.EXPO_PUBLIC_STORYBOOK_ENABLED !== 'true',
+      // NextGen AI fork: never pull Cherry Studio's over-the-air updates.
+      enabled: false,
     },
     ios: {
       ...config.ios,
